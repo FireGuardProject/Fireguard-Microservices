@@ -7,3 +7,6 @@
 [submodule "Microservices/API"]
 	path = Microservices/API
 	url = https://github.com/FireGuardProject/fireguard_api.git
+[submodule "Microservices/Database"]
+	path = Microservices/Database
+	url = https://github.com/FireGuardProject/fireguard_database.git
