@@ -10,3 +10,9 @@
 [submodule "Microservices/Database"]
 	path = Microservices/Database
 	url = https://github.com/FireGuardProject/fireguard_database.git
+[submodule "Mircroservices/FRCM"]
+	path = Mircroservices/FRCM
+	url = https://github.com/FireGuardProject/fireguard_frcm.git
+[submodule "Mircroservices/API"]
+	path = Mircroservices/API
+	url = https://github.com/FireGuardProject/fireguard_api.git
