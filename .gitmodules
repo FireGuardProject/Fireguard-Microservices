@@ -1,12 +1,12 @@
 [submodule "Microservices/Integration-Tests"]
 	path = Microservices/Integration-Tests
 	url = https://github.com/FireGuardProject/fireguard_integration_tests.git
+[submodule "Microservices/FRCM"]
+	path = Microservices/FRCM
+	url = https://github.com/FireGuardProject/fireguard_frcm.git
+[submodule "Microservices/API"]
+	path = Microservices/API
+	url = https://github.com/FireGuardProject/fireguard_api.git
 [submodule "Microservices/Database"]
 	path = Microservices/Database
 	url = https://github.com/FireGuardProject/fireguard_database.git
-[submodule "Mircroservices/FRCM"]
-	path = Mircroservices/FRCM
-	url = https://github.com/FireGuardProject/fireguard_frcm.git
-[submodule "Mircroservices/API"]
-	path = Mircroservices/API
-	url = https://github.com/FireGuardProject/fireguard_api.git
