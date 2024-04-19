@@ -1,22 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fireguard-deployment
+  name: logic
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fireguard
+      app: logic
   template:
     metadata:
       labels:
-        app: fireguard
+        app: logic
     spec:
       containers:
-      - name: fireguard
-        image: haakonm/fireguard-app:latest  # You need to replace <your-image-path> with your Docker image path in a registry.
-        ports:
-        - containerPort: 8000
+      - name: logic
+        image: haakonm/fireguard-frcm  # You need to replace <your-image-path> with your Docker image path in a registry.
         resources:
           requests:
             memory: "64Mi"

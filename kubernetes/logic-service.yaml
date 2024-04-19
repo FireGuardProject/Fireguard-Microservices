@@ -1,0 +1,12 @@
+#create stable endpoint for ponger service
+apiVersion: v1
+kind: Service
+metadata:
+  name: logic
+spec:
+  selector:
+    app: logic
+  ports:
+    - protocol: TCP
+      port: 2000
+      targetPort: 2000
