@@ -5,17 +5,28 @@ This guide walks you through the process of setting up the FireGuard application
 
 ### Prerequisites for Running This Repository:
 Before you start, ensure you have the following prerequisites installed on your machine:
- * DockerDeskop. Install [Here](https://www.docker.com/products/docker-desktop/)
- * Minikube - For creating a local Kubernetes cluster. Install [Here](https://minikube.sigs.k8s.io/docs/start/)
- * Kubectl - For interacting with the Kubernetes cluster. Install [Here](https://kubernetes.io/docs/tasks/tools/)
- * Postman - For interacting with the API endpoints. Install [Here](https://www.postman.com/downloads/)
+ * Docker Deskop - For managing docker images and containers. Install [here](https://www.docker.com/products/docker-desktop/)
+ * Minikube - For creating a local Kubernetes cluster. Install [here](https://minikube.sigs.k8s.io/docs/start/)
+ * Kubectl - For interacting with the Kubernetes cluster. Install [here](https://kubernetes.io/docs/tasks/tools/)
+ * Postman - For interacting with the API endpoints. Install [here](https://www.postman.com/downloads/)
 
 ### Getting Started
-First you need to clone the github repo to you own machine!
-Then you can navigate to the directory containing the Kubernetes configuration files for the FireGuard application using the command line:
+First you need to clone the github repo to you own machine! Go into your working directory in the terminal and paste:
 ```sh
-cd ".../Fireguard-microservices/kubernetes"
+git clone https://github.com/FireGuardProject/Fireguard-Microservices.git
+cd Fireguard-microservices
 ```
+This repo uses microservices as submodules, so you need to fetch these submodules:
+```sh
+git submodule init
+git submodule upodate
+```
+Then you can navigate to the directory containing the Kubernetes configuration files for the FireGuard application:
+```sh
+cd kubernetes
+```
+### Starting Docker
+Before starting the process with running minikube, you need to make sure that docker is running. Simply start the Docker Desktop application you downloaded earlier, and make sure that the Docker Engine is running.
 
 ### Starting Minikube
 Start your Minikube environment with the following command:
@@ -38,22 +49,31 @@ Deploy the FireGuard application by applying the Kubernetes manifests in the fol
 ```sh
 kubectl apply -f metclient-secret.yaml
 ```
-#### 2. Deploy the FireGuard application:
-```sh
-kubectl apply -f frcm-deployment.yaml
-```
-#### 3. Expose the FireGuard application via a LoadBalancer service:
+#### 2. Apply the port configuration:
 ```sh
 kubectl apply -f port-service.yaml
 ```
-NB! The previous step will most likely take some time to download the docker file. Wait until the download is completed before moving on to the next step. 
+#### 3. Apply the logic configuration:
+```sh
+kubectl apply -f logic-service.yaml
+```
+#### 4. Deploy the frcm microservice:
+```sh
+kubectl apply -f frcm-deployment.yaml
+```
+#### 5. Deploy the api microservice:
+```sh
+kubectl apply -f api-deployment.yaml
+```
+
+NB! The previous step will most likely take some time, due to downloading the Dockerfile. Wait until the download is completed before moving on to the next step. 
 
 ### Verifying the Application Deployment
 Check the status of the deployed resources (pods, services, deployments, etc.) to ensure everything is up and running:
 ```sh
 kubectl get all
 ```
-NB! Run the previous step until it is done running, before going further.
+NB! Run the previous step until it is done, and you have confirmed that everything runs as expected, before moving onto the next step.
 
 ### Accessing the FireGuard Service
 Finally, access the FireGuard service through Minikube by running:
