@@ -33,3 +33,8 @@ spec:
             secretKeyRef:
               name: fireguard-secrets
               key: MET_CLIENT_SECRET
+        - name: FIREBASE_CREDENTIALS_BASE64
+          valueFrom:
+            secretKeyRef:
+              name: fireguard-secrets
+              key: FIREBASE_CREDENTIALS_BASE64
