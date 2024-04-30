@@ -193,4 +193,4 @@ minikube stop
 ```
 
 #### Additional CD pipeline configuration
-Further, if you want to implement CD pipeline for the repo to the cluster, AgroCD can be utilized for this task. Here are a guide for implementation. Install [Click here](https://argo-cd.readthedocs.io/en/stable/getting_started/).
+Further, if you want to implement CD pipeline for the repo to the cluster, AgroCD can be utilized for this task. Here are a guide for implementation. [Click here](https://argo-cd.readthedocs.io/en/stable/getting_started/).
