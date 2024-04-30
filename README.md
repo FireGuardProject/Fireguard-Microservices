@@ -66,14 +66,14 @@ kubectl apply -f frcm-deployment.yaml
 kubectl apply -f api-deployment.yaml
 ```
 
-NB! The previous step will most likely take some time, due to downloading the Dockerfile. Wait until the download is completed before moving on to the next step. 
+NB! The previous step will most likely take some time, due to downloading the Docker-image. Wait until the download is completed before moving on to the next step. 
 
 ### Verifying the Application Deployment
 Check the status of the deployed resources (pods, services, deployments, etc.) to ensure everything is up and running:
 ```sh
 kubectl get all
 ```
-NB! Run the previous step until it is done, and you have confirmed that everything runs as expected, before moving onto the next step.
+NB! Run the previous step until it is done, and you have confirmed that everything runs as expected, before moving onto the next step. You need to run kubectl get all each time you want an update of the running state. 
 
 ### Accessing the FireGuard Service
 Finally, access the FireGuard service through Minikube by running:
