@@ -19,7 +19,7 @@ cd Fireguard-microservices
 This repo uses microservices as submodules, so you need to fetch these submodules:
 ```sh
 git submodule init
-git submodule upodate
+git submodule update
 ```
 Then you can navigate to the directory containing the Kubernetes configuration files for the FireGuard application:
 ```sh
