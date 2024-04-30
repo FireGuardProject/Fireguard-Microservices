@@ -17,6 +17,7 @@ spec:
         image: haakonm/fireguard-api  # You need to replace <your-image-path> with your Docker image path in a registry.
         ports:
         - containerPort: 8000
+        imagePullPolicy: Always # Set the image pull policy to Always
         resources:
           requests:
             memory: "64Mi"
