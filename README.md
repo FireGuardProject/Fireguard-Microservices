@@ -92,7 +92,7 @@ That's because the url is not correct. The picture below shows where you will fi
 
 ![alt text](images/ipandport.png)
 
-Use this IP and port when you want to run one of the APIs. We have 5 different APIs you can try out! But first you need a bearer token!
+Use this IP and port (your own, not the one of the picture) when you want to run one of the APIs. We have 5 different APIs you can try out! But first you need a bearer token!
 
 ### Authentication API
 Our API uses token-based authentication. To obtain a token, you must use the /api/token endpoint. We would recommend you to use Postman for this. In Postman send a 'POST' request to the endpoint:
@@ -101,7 +101,7 @@ http://<ip>:<port>/api/token
 ```
 But wait... you need a username and password. For now we will give you access to a test user. Simply use:
 * username: test
-* passwrod: test
+* password: test
 
 Just to make it easier for youself, you can simply paste the line below into Postman (but remember to change the 'ip' and 'port'!)
 ```sh
