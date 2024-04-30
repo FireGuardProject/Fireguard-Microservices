@@ -14,7 +14,7 @@ Before you start, ensure you have the following prerequisites installed on your 
 First you need to clone the github repo to you own machine! Go into your working directory in the terminal and paste:
 ```sh
 git clone https://github.com/FireGuardProject/Fireguard-Microservices.git
-cd Fireguard-microservices
+cd Fireguard-Microservices
 ```
 This repo uses microservices as submodules, so you need to fetch these submodules:
 ```sh
