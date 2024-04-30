@@ -88,7 +88,11 @@ The url will give empty json shown under:
     "detail": "Not Found"
 }
 ```
-That's because the url is not correct. Use the IP and port provided when you want to run one of the API calls below. We have 5 different APIs you can try out! But first you need a bearer token!
+That's because the url is not correct. Use the IP and port provided when you want to run one of the APIs: 
+
+![alt text](images/ipandport.png)
+
+We have 5 different APIs you can try out! But first you need a bearer token!
 
 ### Authentication API
 Our API uses token-based authentication. To obtain a token, you must use the /api/token endpoint. We would recommend you to use Postman for this. In Postman send a 'POST' request to the endpoint:
@@ -193,4 +197,4 @@ minikube stop
 ```
 
 #### Additional CD pipeline configuration
-Further, if you want to implement CD pipeline for the repo to the cluster, AgroCD can be utilized for this task. Here are a guide for implementation. [Click here](https://argo-cd.readthedocs.io/en/stable/getting_started/).
+Further, if you want to implement CD pipeline for the repo to the cluster, ArgoCD can be utilized for this task. Here are a guide for implementation. [Click here](https://argo-cd.readthedocs.io/en/stable/getting_started/).
