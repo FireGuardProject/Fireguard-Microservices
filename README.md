@@ -88,11 +88,11 @@ The url will give empty json shown under:
     "detail": "Not Found"
 }
 ```
-That's because the url is not correct. Use the IP and port provided when you want to run one of the APIs: 
+That's because the url is not correct. The picture below shows where you will find your own IP and port after running the line above.  
 
 ![alt text](images/ipandport.png)
 
-We have 5 different APIs you can try out! But first you need a bearer token!
+Use this IP and port when you want to run one of the APIs. We have 5 different APIs you can try out! But first you need a bearer token!
 
 ### Authentication API
 Our API uses token-based authentication. To obtain a token, you must use the /api/token endpoint. We would recommend you to use Postman for this. In Postman send a 'POST' request to the endpoint:
