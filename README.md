@@ -15,6 +15,12 @@ Before you start, ensure you have the following prerequisites installed on your 
  * Kubectl - For interacting with the Kubernetes cluster. Install [here](https://kubernetes.io/docs/tasks/tools/)
  * Postman - For interacting with the API endpoints. Install [here](https://www.postman.com/downloads/)
 
+
+### System overview
+
+
+![alt text](images/system_overview.png)
+
 ### Getting Started
 First you need to clone the github repo to you own machine! Go into your working directory in the terminal and paste:
 ```sh
