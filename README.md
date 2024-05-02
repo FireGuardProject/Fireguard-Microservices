@@ -1,5 +1,7 @@
 # Fireguard-Microservices
 
+[![Quality Gate Status](http://34.77.27.251:9001/api/project_badges/measure?project=firerisk&metric=alert_status&token=sqb_9eccfa0647cf6d05bc63ce2b08c298c7380a9a89)](http://34.77.27.251:9001/dashboard?id=firerisk)
+
 ## How to setup Firestore example guide!
 📚 [Check out this Wiki!](https://github.com/FireGuardProject/Fireguard-Microservices/wiki/FIRESTORE-GUIDE)
 
