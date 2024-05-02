@@ -1,5 +1,8 @@
 # Fireguard-Microservices
 
+## How to setup Firestore example guide!
+📚 [Check out this Wiki!](https://github.com/FireGuardProject/Fireguard-Microservices/wiki/FIRESTORE-GUIDE)
+
 ## Setting Up the FireGuard Application in a Local Kubernetes Environment
 This guide walks you through the process of setting up the FireGuard application on your local machine using Minikube and Kubernetes. Follow the steps below to deploy the application and access it through a local service.
 
