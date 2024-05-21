@@ -2,9 +2,6 @@
 
 [![Quality Gate Status](http://34.77.27.251:9001/api/project_badges/measure?project=firerisk&metric=alert_status&token=sqb_9eccfa0647cf6d05bc63ce2b08c298c7380a9a89)](http://34.77.27.251:9001/dashboard?id=firerisk)
 
-## How to setup Firestore - database example guide!
-📚 [Check out this Wiki!](https://github.com/FireGuardProject/Fireguard-Microservices/wiki/FIRESTORE-GUIDE)
-
 ## Setting Up the FireGuard Application in a Local Kubernetes Environment
 This guide walks you through the process of setting up the FireGuard application on your local machine using Minikube and Kubernetes. Follow the steps below to deploy the application and access it through a local service.
 
@@ -206,6 +203,9 @@ Congratulations, you're the best! You have successfully deployed and accessed th
 ```sh
 minikube stop
 ```
+
+## How to setup Firestore - database example guide!
+📚 [Check out this Wiki!](https://github.com/FireGuardProject/Fireguard-Microservices/wiki/FIRESTORE-GUIDE)
 
 #### Additional CD pipeline configuration
 Further, if you want to implement CD pipeline for the repo to the cluster, ArgoCD can be utilized for this task. Here are a guide for implementation. [Click here](https://argo-cd.readthedocs.io/en/stable/getting_started/).
